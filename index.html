@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link
+               rel="stylesheet"
+               href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+          />
+          <link rel="stylesheet" href="style.css" />
+          <title>StrongFit</title>
+     </head>
+     <body>
+          <div class="container" id="home">
+               <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                         <!-- Logo -->
+                         <a class="navbar-brand" href="#">
+                              <h1 class="h4 m-0">StrongFit</h1>
+                         </a>
+
+                         <!-- Botão hamburguer -->
+                         <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarCenteredExample"
+                              aria-controls="navbarCenteredExample"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                         >
+                              <span class="navbar-toggler-icon"></span>
+                         </button>
+
+                         <!-- Menu colapsável -->
+                         <div class="collapse navbar-collapse" id="navbarCenteredExample">
+                              <!-- Centraliza a navegação -->
+                              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                        <a class="nav-link active" href="#home">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#services">Services</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#shop">Shop</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                   </li>
+                              </ul>
+
+                              <!-- Botão à direita -->
+                              <div class="d-flex justify-content-end">
+                                   <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal"
+                                   >
+                                        Sign Up
+                                   </button>
+                              </div>
+                              <!-- Modal -->
+                              <div
+                                   class="modal fade"
+                                   id="subscribeModal"
+                                   tabindex="-1"
+                                   aria-labelledby="subscribeModalLabel"
+                                   aria-hidden="true"
+                              >
+                                   <div class="modal-dialog">
+                                        <div class="modal-content">
+                                             <!-- Cabeçalho -->
+                                             <div class="modal-header">
+                                                  <h5 class="modal-title" id="subscribeModalLabel">
+                                                       Sign Up
+                                                  </h5>
+                                                  <button
+                                                       type="button"
+                                                       class="btn-close"
+                                                       data-bs-dismiss="modal"
+                                                       aria-label="Fechar"
+                                                  ></button>
+                                             </div>
+
+                                             <!-- Corpo do modal -->
+                                             <div class="modal-body">
+                                                  <form>
+                                                       <div class="mb-3">
+                                                            <label
+                                                                 for="nameInput"
+                                                                 class="form-label"
+                                                                 >Name</label
+                                                            >
+                                                            <input
+                                                                 type="text"
+                                                                 class="form-control"
+                                                                 id="nameInput"
+                                                                 placeholder="Full Name"
+                                                                 required
+                                                            />
+                                                       </div>
+                                                       <div class="mb-3">
+                                                            <label
+                                                                 for="emailInput"
+                                                                 class="form-label"
+                                                                 >E-mail</label
+                                                            >
+                                                            <input
+                                                                 type="email"
+                                                                 class="form-control"
+                                                                 id="emailInput"
+                                                                 placeholder="youremail@email.com"
+                                                                 required
+                                                            />
+                                                       </div>
+                                                       <div class="mb-3">
+                                                            <label
+                                                                 for="passwordInput"
+                                                                 class="form-label"
+                                                                 >Password</label
+                                                            >
+                                                            <input
+                                                                 type="password"
+                                                                 class="form-control"
+                                                                 id="passwordInput"
+                                                                 placeholder="Your Password"
+                                                                 required
+                                                            />
+                                                       </div>
+                                                  </form>
+                                             </div>
+
+                                             <!-- Rodapé -->
+                                             <div class="modal-footer">
+                                                  <button
+                                                       type="button"
+                                                       class="btn btn-danger"
+                                                       data-bs-dismiss="modal"
+                                                  >
+                                                       Close
+                                                  </button>
+                                                  <button type="submit" class="btn btn-success">
+                                                       Send
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- Modal -->
+                         </div>
+                    </div>
+               </nav>
+          </div>
+
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                    <button
+                         type="button"
+                         data-bs-target="#carouselExample"
+                         data-bs-slide-to="0"
+                         class="active"
+                         aria-current="true"
+                         aria-label="Slide 1"
+                    ></button>
+                    <button
+                         type="button"
+                         data-bs-target="#carouselExample"
+                         data-bs-slide-to="1"
+                         aria-label="Slide 2"
+                    ></button>
+                    <button
+                         type="button"
+                         data-bs-target="#carouselExample"
+                         data-bs-slide-to="2"
+                         aria-label="Slide 3"
+                    ></button>
+               </div>
+               <div class="carousel-inner h-25-md">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                         <img
+                              src="./imagens/man-5886574_1280.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                         />
+                    </div>
+                    <div class="carousel-item">
+                         <img
+                              src="./imagens/man-5886570_1280.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                         />
+                    </div>
+                    <div class="carousel-item">
+                         <img
+                              src="./imagens/fitness-and-health-5711493_1280.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                         />
+                    </div>
+               </div>
+               <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+               >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+               </button>
+               <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+               >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+               </button>
+          </div>
+
+          <section class="container my-5" id="about">
+               <div class="row align-items-center">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                         <h1>About Us</h1>
+                         <p>
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi harum
+                              maiores illum suscipit, earum magni mollitia impedit eaque dicta
+                              praesentium et distinctio expedita, aliquid quo fugit hic rerum
+                              delectus dignissimos!
+                         </p>
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae
+                              et magni quae quibusdam dolore unde vitae quidem, itaque neque
+                              similique libero sint dolorum, asperiores, autem nisi fuga amet.
+                              Tenetur!
+                         </p>
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae
+                              et magni quae quibusdam dolore unde vitae quidem.
+                         </p>
+                    </div>
+
+                    <!-- Coluna de imagem -->
+                    <div class="col-md-6 text-center">
+                         <img
+                              src="./imagens/fitness-studio-3675225_1280.jpg"
+                              alt="Academia StrongFit"
+                              class="img-fluid rounded shadow"
+                              style="max-height: 300px; object-fit: cover"
+                         />
+                    </div>
+               </div>
+          </section>
+
+          <section id="services">
+               <div class="container">
+                    <h1 class="text-center p-3">Services</h1>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                         <div class="col-md-4">
+                              <div class="card h-100">
+                                   <img
+                                        src="./imagens/fitness-9180669_1280.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        style="height: 250px; object-fit: cover"
+                                   />
+                                   <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Personal Trainer</h5>
+                                        <p class="card-text flex-grow-1">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing
+                                             elit. Quo sit fugit temporibus natusritimos.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4">
+                              <div class="card h-100">
+                                   <img
+                                        src="./imagens/man-7847246_1280.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        style="height: 250px; object-fit: cover"
+                                   />
+                                   <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Cross Training</h5>
+                                        <p class="card-text flex-grow-1">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing
+                                             elit. Quo sit fugit temporibus natusritimos.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4">
+                              <div class="card h-100">
+                                   <img
+                                        src="./imagens/esteira_movement.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        style="height: 250px; object-fit: cover"
+                                   />
+                                   <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Cardio Workout</h5>
+                                        <p class="card-text flex-grow-1">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing
+                                             elit. Quo sit fugit temporibus natusritimos.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <br />
+          </section>
+
+          <section id="shop" class="mt-2">
+               <h1 class="ms-5">Shop</h1>
+
+               <div class="container py-4">
+                    <div class="d-flex justify-content-center">
+                         <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                              <a
+                                   class="list-group-item list-group-item-action active"
+                                   id="list-home-list"
+                                   data-bs-toggle="list"
+                                   href="#list-home"
+                                   role="tab"
+                                   aria-controls="home"
+                                   >Supplements</a
+                              >
+                              <a
+                                   class="list-group-item list-group-item-action"
+                                   id="list-profile-list"
+                                   data-bs-toggle="list"
+                                   href="#list-profile"
+                                   role="tab"
+                                   aria-controls="profile"
+                                   >Accessories</a
+                              >
+                              <a
+                                   class="list-group-item list-group-item-action"
+                                   id="list-settings-list"
+                                   data-bs-toggle="list"
+                                   href="#list-settings"
+                                   role="tab"
+                                   aria-controls="settings"
+                                   >Clothes</a
+                              >
+                         </div>
+                    </div>
+
+                    <div class="tab-content border p-4 mt-3 text-center" id="nav-tabContent">
+                         <div
+                              class="tab-pane fade show active"
+                              id="list-home"
+                              role="tabpanel"
+                              aria-labelledby="list-home-list"
+                         >
+                              <h3>Supplements</h3>
+                              <div class="row">
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/top-whey.jpg"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">Whey Protein</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/bcaa.webp"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">BCAA Integralmedica</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/creatine.webp"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">Creatina Max</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div
+                              class="tab-pane fade"
+                              id="list-profile"
+                              role="tabpanel"
+                              aria-labelledby="list-profile-list"
+                         >
+                              <h3>Accessories</h3>
+                              <div class="row">
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/strap.webp"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">Strap for bodybuilding</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/cinturao.webp"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">Bodybuilding Belt</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div
+                              class="tab-pane fade"
+                              id="list-settings"
+                              role="tabpanel"
+                              aria-labelledby="list-settings-list"
+                         >
+                              <h3>Clothes</h3>
+                              <div class="row">
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/tenis.jpeg"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">Gym shoes</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                             <img
+                                                  src="./imagens/blusa.jpg"
+                                                  class="card-img-top"
+                                                  alt="..."
+                                                  style="height: 300px"
+                                             />
+                                             <div
+                                                  class="card-body d-flex flex-column justify-content-between"
+                                             >
+                                                  <h5 class="card-title">growth T-shirt</h5>
+                                                  <p class="card-text">
+                                                       Lorem ipsum dolor sit amet consectetur
+                                                       adipisicing elit.
+                                                  </p>
+                                                  <button type="button" class="btn btn-success">
+                                                       Buy Now
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="contact">
+               <br />
+               <div class="container">
+                    <form class="row g-3">
+                         <h2 class="text-center">Contact Us</h2>
+                         <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4" />
+                         </div>
+                         <div class="col-md-6">
+                              <label for="inputName" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="inputName" />
+                         </div>
+                         <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input
+                                   type="text"
+                                   class="form-control"
+                                   id="inputAddress"
+                                   placeholder="1234 Main St"
+                              />
+                         </div>
+
+                         <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity" />
+                         </div>
+                         <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                   <option selected>Choose...</option>
+                                   <option>...</option>
+                              </select>
+                         </div>
+                         <div class="col-md-2">
+                              <label for="inputNumber" class="form-label">Number</label>
+                              <input type="number" class="form-control" id="inputNumber" />
+                         </div>
+                         <div class="col-12">
+                              <div class="form-check">
+                                   <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                   <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                   </label>
+                              </div>
+                         </div>
+
+                         <div class="col-12">
+                              <label for="exampleFormControlTextarea1" class="form-label"
+                                   >Describe your contact</label
+                              >
+                              <textarea
+                                   class="form-control"
+                                   id="exampleFormControlTextarea1"
+                                   rows="3"
+                              ></textarea>
+                         </div>
+                         <div class="col-12">
+                              <button type="submit" class="btn btn-success">Send</button
+                              ><br /><br />
+                         </div>
+                    </form>
+               </div>
+          </section>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+</html>

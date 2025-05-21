@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.carousel-inner {
+     img {
+          object-position: center;
+     }
+}
+
+h1 {
+     color: #ffc107;
+}
+
+p,
+.nav-link {
+     color: #212529;
+}
+
+nav {
+     font-family: 'Bebas Neue', sans-serif;
+
+     .navbar-brand {
+          font-family: 'Montserrat', sans-serif;
+     }
+
+     button.btn-primary {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 12px;
+     }
+}
+
+.btn-primary {
+     background-color: #ffc107;
+     border: #ffc107;
+     transition: 0.3s;
+}
+
+.btn-primary:hover {
+     background-color: #d6a81c;
+}
+
+@media (min-width: 768px) {
+     .carousel-inner {
+          height: 585px;
+     }
+}
+
+#services,
+#contact {
+     background-color: #faf8f8;
+}
+
+.list-group-horizontal .list-group-item {
+     border-radius: 50px;
+     margin: 0 5px;
+     padding: 10px 20px;
+     background-color: #f8f9fa;
+     border: 2px solid #d6a81c;
+     color: #d6a81c;
+     transition: 0.3s;
+     font-weight: 500;
+}
+
+.list-group-horizontal .list-group-item:hover {
+     background-color: #d6a81c;
+     color: white;
+}
+
+.list-group-horizontal .list-group-item.active {
+     background-color: #d6a81c;
+     color: white;
+     border-color: #d6a81c;
+}
